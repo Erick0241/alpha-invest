@@ -1,0 +1,369 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*{
+    font-family:  'PT Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* preguntar acerca del rem y los tama;os y las medidas /// acerca de text aligne y de inline block tambien/// por que se pone padding cero en .menu{ /// preguntar que error me puede dar el poner el font al inicio con *   */ 
+
+header{
+    background-color:#1f7a8c;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+nav{
+    display:inline-flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*
+----------- este div ya no existe 
+
+
+.navLog{
+    
+    display:inline-flex;
+    align-items: center;
+    justify-items: flex-end;
+    
+    
+}
+----------------- 
+div.navLog a{
+    text-decoration: none;
+    
+}
+
+*/
+
+
+/*
+.navlog li a{
+    text-decoration: 
+Epic Games
+Tienda
+Biblioteca
+Unreal Engine
+none;
+}
+
+*/
+
+
+/*
+.menu-nav{
+    justify-content: center;
+}
+*/
+
+/*
+.navLog{
+
+}
+*/
+
+.logo-img{
+    
+    height: 55px;
+    width: 50px;
+}
+/*
+.menu{
+    justify-content: right;
+    padding: 0;
+    list-style: none;
+    margin: 0px auto;
+    text-align: right;
+    align-items: right;
+}
+*/
+
+/*
+
+
+----------
+
+
+
+
+*/
+
+
+
+.menu{
+    display: flex;
+    justify-items: flex-end;
+    list-style: none;
+}
+
+
+
+
+.menu li a{
+    display: flex;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.menu li a:hover{
+    color: #131212;
+    background-color: #f4f4f9;
+    border-bottom: 100%;
+    font-weight: bold;
+    
+}
+.submenu li a :hover{
+    color: #131212;
+    background-color: #f4f4f9;
+    border-bottom: 100%;
+    text-decoration: none;
+    text-decoration: double;
+}
+
+/*
+.menu li a{
+    text-decoration: none;
+}
+
+*/
+/* intento de botonera despegable  pero no funciono 
+checkear en la semana*/
+/* revisar Padres e hijos  creo que eso es problema*/
+
+
+
+ul ul{
+    position: absolute;
+    display: none;
+}
+
+
+
+/*
+
+ul ul li a{
+    display: block;
+    text-decoration: none;
+}
+---------------
+
+li:hover{
+    color: aqua;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+-------------
+
+
+a{
+    text-decoration: none;
+}
+
+----------
+
+a hover{
+    color: red;
+}
+
+---------------------
+
+ul li:hover ul{
+    display: block;
+    background-color: red;
+}
+
+
+*/
+
+
+
+
+
+
+
+/* preguntar si se tiene que hacer otro documento  */
+/* revisar Padres e hijos  
+
+INTENTO DE  IMAGEN EN LA PAGINA DE INICIO con error
+background-image:url(../img/homepic.png);
+    background-position: center;
+    background-size: cover;
+    margin: 10px 10px 10px 10px;
+    width: 50px;
+    height: 50px;
+*/
+
+/* solo dejar border 
+para arreglar el section
+
+
+#section1{
+    border: 1rem solid whitesmoke;
+    padding: 300px;
+
+img #homeImg{
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+
+background-image:url(../img/homepic.png);
+*/
+
+
+#section1{
+    background-image:url(../img/homepic.png); 
+    background-size: cover;
+    text-align: center;
+    size-adjust: 5rem;
+}
+#section2{
+    background-color: #bfdbf7;
+    padding: 300px;
+    text-align: left;
+}
+#section3{
+    background-color: #131212;
+    padding: 300px;
+    color: whitesmoke;
+}
+#section4{
+    background-color: #e1e5f2;
+    padding: 300px;
+    text-align: left;
+}
+#section5{
+    background-color: #e1e5f2;
+    padding: 150px;
+}
+
+h1{ 
+    font-size: 250%;
+    border: 1rem solid #022b3a;
+    padding: 50px;
+    margin: 10px 10px 10px 10px;
+    color: #022b3a;
+}
+h2{ 
+    font-size: 200%;
+    padding: 30px;
+    margin: 10px 10px 10px 10px;
+    color: #1f7a8c;
+}
+div h2 {
+    font-size: 150%;
+    padding: 30px;
+    text-align: center;
+}
+
+h3{ font-size: 150%;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    color: #131212;
+    text-align: left;
+}
+h3 p{
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    color: #131212;
+}
+
+.divText{
+    font-size: 200%;
+    margin: 50px 50px 50px 50px;
+    padding: 10px;
+}
+
+.divContact{
+    background-color: #b8dbd9;
+    display: block;
+    align-items: center;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+}
+.textWhite{
+    color: whitesmoke;
+}
+.grounWhite{
+    background-color: #022b3a;
+    color: whitesmoke;
+}
+#cta {
+    background-color: #ff4000;
+    color: whitesmoke;
+    justify-content: center;
+    font-weight: bold;
+}
+.centercta{
+    padding: 20px 20px 20px 20px;
+}
+.ctaButton{
+    display: flex;
+    justify-content: center;
+}
+
+/*
+GRID IMPLEMENTATION
+*/
+
+
+.container-asesores{
+    border: solid 3px red;
+    padding: 5px;
+    background-color: #022b3a;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 600px;
+    height: 500px;
+}
+
+.itemAsesor{
+    box-sizing: border-box;
+    border: solid 3px #ff4000;
+    background-color: #1f7a8c;
+    color: whitesmoke;
+    border-radius: 15px;
+
+}
+
+
+
+/*
+footer  info 
+*/
+
+footer{
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+
