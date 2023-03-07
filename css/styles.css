@@ -5,18 +5,31 @@
 }
 
 *{
-    font-family:  'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
-html{
+
+*html{
     scroll-behavior: smooth;
 }
 
+h1{}
+h2{}
+h3{font-size: 1.5em;}
+p{font-size: 1em;
+font-weight: lighter;}
 
-/* preguntar acerca del rem y los tama;os y las medidas /// acerca de text aligne y de inline block tambien/// por que se pone padding cero en .menu{ /// preguntar que error me puede dar el poner el font al inicio con *   */ 
+.color-hover{
+    color: #ff4000;
+}
+.textWhite{
+    color: #f4f4f9;
+}
 
 header{
-    background-color:#1f7a8c;
+    background-color:#131212;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -28,95 +41,23 @@ header{
     
 }
 
-nav{
-    display:inline-flex;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-}
-
-/*
------------ este div ya no existe 
-
-
-.navLog{
-    
-    display:inline-flex;
-    align-items: center;
-    justify-items: flex-end;
-    
-    
-}
------------------ 
-div.navLog a{
-    text-decoration: none;
+.titleh3{
     
 }
 
-*/
 
+/*   NAVEGACION  INICIO ------*/
 
-/*
-.navlog li a{
-    text-decoration: 
-Epic Games
-Tienda
-Biblioteca
-Unreal Engine
-none;
-}
-
-*/
-
-
-/*
-.menu-nav{
-    justify-content: center;
-}
-*/
-
-/*
-.navLog{
-
-}
-*/
-
-.logo-img{
-    
-    height: 55px;
+.logo-img {
+    height:55px;
     width: 50px;
 }
-/*
-.menu{
-    justify-content: right;
-    padding: 0;
-    list-style: none;
-    margin: 0px auto;
-    text-align: right;
-    align-items: right;
-}
-*/
 
-/*
-
-
-----------
-
-
-
-
-*/
-
-
-
-.menu{
+.menu {
     display: flex;
     justify-items: flex-end;
     list-style: none;
 }
-
-
-
 
 .menu li a{
     display: flex;
@@ -126,32 +67,21 @@ none;
     
 }
 
-
 .menu li a:hover{
-    color: #131212;
+    color: #ff4000;
     background-color: #f4f4f9;
     border-bottom: 100%;
     font-weight: bold;
     
 }
+
 .submenu li a :hover{
-    color: #131212;
+    color: #ff4000;
     background-color: #f4f4f9;
     border-bottom: 100%;
     text-decoration: none;
     text-decoration: double;
 }
-
-/*
-.menu li a{
-    text-decoration: none;
-}
-
-*/
-/* intento de botonera despegable  pero no funciono 
-checkear en la semana*/
-/* revisar Padres e hijos  creo que eso es problema*/
-
 
 
 ul ul{
@@ -160,177 +90,253 @@ ul ul{
 }
 
 
-
-/*
-
-ul ul li a{
-    display: block;
-    text-decoration: none;
-}
----------------
-
-li:hover{
-    color: aqua;
-    font-weight: bold;
-    text-decoration: none;
-}
-
--------------
+/*   NAVEGACION  FIN ------*/
+ 
 
 
-a{
-    text-decoration: none;
-}
-
-----------
-
-a hover{
-    color: red;
-}
-
----------------------
-
-ul li:hover ul{
-    display: block;
-    background-color: red;
-}
-
-
-*/
-
-
-
-
-
-
-
-/* preguntar si se tiene que hacer otro documento  */
-/* revisar Padres e hijos  
-
-INTENTO DE  IMAGEN EN LA PAGINA DE INICIO con error
-background-image:url(../img/homepic.png);
-    background-position: center;
-    background-size: cover;
+section h1{
+    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 10px 10px 10px 10px;
-    width: 50px;
-    height: 50px;
-*/
+    color: #022b3a;
 
-/* solo dejar border 
-para arreglar el section
-
-
-#section1{
-    border: 1rem solid whitesmoke;
-    padding: 300px;
-
-img #homeImg{
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    width: 300px;
-    height: 300px;
-
-background-image:url(../img/homepic.png);
-*/
-
-
-#section1{
-    background-image:url(../img/homepic.png); 
-    background-size: cover;
-    text-align: center;
-    size-adjust: 5rem;
-}
-#section2{
-    background-color: #bfdbf7;
-    padding: 300px;
-    text-align: left;
-}
-#section3{
-    background-color: #131212;
-    padding: 300px;
-    color: whitesmoke;
-}
-#section4{
-    background-color: #e1e5f2;
-    padding: 300px;
-    text-align: left;
-}
-#section5{
-    background-color: #e1e5f2;
-    padding: 150px;
 }
 
-h1{ 
-    font-size: 250%;
-    border: 1rem solid #022b3a;
-    padding: 50px;
+
+
+
+section h2{
+    font-size: 1rem;
+    padding: 10px;
     margin: 10px 10px 10px 10px;
     color: #022b3a;
 }
-h2{ 
-    font-size: 200%;
-    padding: 30px;
-    margin: 10px 10px 10px 10px;
-    color: #1f7a8c;
-}
-div h2 {
-    font-size: 150%;
-    padding: 30px;
-    text-align: center;
+
+body{
+    background-color: #f4f4f9;
 }
 
-h3{ font-size: 150%;
-    padding: 10px;
-    margin: 10px 10px 10px 10px;
-    color: #131212;
-    text-align: left;
-}
-h3 p{
-    padding: 10px;
-    margin: 20px 20px 20px 20px;
-    color: #131212;
-}
 
-.divText{
-    font-size: 200%;
-    margin: 50px 50px 50px 50px;
-    padding: 10px;
-}
 
-.divContact{
-    background-color: #b8dbd9;
-    display: block;
+
+
+/* nuevo nav prueba 1
+
+nav{
+    display:inline-flex;
     align-items: center;
+    text-decoration: none;
+    list-style: none;
 }
-footer{
-    padding: 10px;
-    text-align: center;
+
+
+
+
+
+
+
+
+.nav {
+
+    width: 100%;
+    padding-left: 20px;
+    height: 50px;
+    display-flex;
+    position: relative;
+    align-items: center;
+    background-color: #e65b00;
+    justify-content: space-around;
 }
-.textWhite{
-    color: whitesmoke;
-}
-.grounWhite{
-    background-color: #022b3a;
-    color: whitesmoke;
-}
-#cta {
-    background-color: #ff4000;
-    color: whitesmoke;
-    justify-content: center;
-    font-weight: bold;
-}
-.centercta{
-    padding: 20px 20px 20px 20px;
-}
-.ctaButton{
+
+
+*/
+
+
+
+
+
+/*   MAIN INICIO  ------*/
+
+/*   INICIO  SECTION  1------*/
+
+#section1{
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: auto;
+    margin:auto;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.8),
+        white,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.1)
+        
+    )
+    ,url("../img/figurafondo\ blanco.jpg") ;
+    background-size: cover;
 }
+
+.section div p{
+    padding: 10px;
+    font-weight: bolder;
+}
+
+/*   INICIO  SECTION  2------*/
+
+
+#section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    
+    
+    
+
+    background-color: white;
+    
+
+}
+
+.section2 div h3{
+    background-image: url(../img/bullinvesting.jpg);
+    justify-content: center;
+
+}
+.container {
+    flex-wrap: wrap;
+    
+
+
+
+}
+
+#imgsect2{
+    height: auto;
+    width: auto;
+    justify-content: center;
+    
+}
+
+#section2 div{
+    display: flex;
+    align-items: flex-start;
+    align-content: stretch;
+    
+}
+
+
+.container{
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+/*   INICIO  SECTION  3------*/
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/viktor-forgacs-3PyBkxgTiL0-unsplash.jpg);
+    background-color: #131212;
+    width: auto;
+    padding: 10px 0;
+
+}
+
+
+
+
+#imgsect3{
+    
+    width:100%;
+    max-height: 450px;
+}
+
+
+
+
+
+
+
+/*   INICIO  SECTION  4------*/
+#section4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none;
+
+
+
+
+    background-color:#022b3a;
+    width: auto;
+    padding: 200px 0;
+
+}
+
+/*   INICIO  SECTION  5-----*/
+
+#section5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+
+
+    width: auto;
+    padding: 20px 0;
+
+}
+
+/*   INICIO  SECTION  6-----*/
+
+#section6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color:#f4f4f9;
+    width: auto;
+    padding: 50px 0;
+    color:#ff4000;
+
+}
+
+
+
+.ctaButton button{
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 15px 30px ;
+    text-align: center;
+    transition: all 100ms ease;
+    
+}
+
 
 /*
-GRID IMPLEMENTATION
-*/
+GRID IMPLEMENTATION   FUNCIONAL 
+
 
 
 .container-asesores{
@@ -354,16 +360,170 @@ GRID IMPLEMENTATION
 
 }
 
-
-
-/*
-footer  info 
 */
 
-footer{
-    list-style: none;
-    text-align: left;
-    text-decoration: none;
+/*   INICIO  GRID NUEVO   -----*/
+
+div .container-asesores{
+    justify-content: center;
+    align-items: center;
+}
+.container-asesores{
+    border: solid 3px white;
+    padding: 10px;
+    background-color:whitesmoke;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 150px;
+    height: 100px;
+}
+
+.itemAsesor{
+    box-sizing: border-box;
+    
+    background-color: #131212;
+    color: whitesmoke;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+/*   FIN DE GRID  -----*/
+
+
+
+/*   INICIO DE FOOTER   -----*/
+
+
+.footer{
+    display: flex;
+    color: #f4f4f9;
+    padding: 1rem 0;
+    height: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #131212;
+
+
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 
+.footer h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+}
+.links li{
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 100;
+    color: #f4f4f9;
+}
+
+
+.links li a{
+    text-decoration: none;
+    color: #f4f4f9;
+    transition: all 200ms ease;
+}
+
+.links li a:hover{
+    color: #ff4000;
+    font-weight: bolder;
+
+}
+.registration{
+    display: flex;
+    flex-direction: column;
+}
+
+.registration input {
+    padding: 10px;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    margin: 1rem 0;
+}
+button {
+    border: none;
+    padding: 12px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+button:hover{
+    background-color:#ff4000;
+    color: #f4f4f9;
+    font-weight: bolder;
+}
+
+.address {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f4f4f9;
+}
+.social {
+    display: flex;
+    list-style: none;
+    color: #f4f4f9;
+    align-items: center;
+    
+}
+
+.social li {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 10px;
+    flex-direction: column;
+    
+    
+    
+}
+
+.social li a{
+    display: flex;
+    color: #f4f4f9;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+    transition: all 200ms ease-out;
+
+}
+
+.social li a:hover{
+    color: #ff4000;
+    
+}
+
+
+/*
+@media screen and (max-width:800px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+}
+
+*/
